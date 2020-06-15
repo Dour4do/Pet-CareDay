@@ -4,7 +4,7 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack';
 
 // Screens
-import { CriarFila } from '../screens'
+import { Deslogar } from '../screens'
 
 // Components
 import DrawerButton from '../components/DrawerButton'
@@ -12,11 +12,11 @@ import DrawerButton from '../components/DrawerButton'
 // Screen Stack
 const Stack = createStackNavigator();
 
-const CriarFilaNavigation = () => {
+const DeslogarNavigation = () => {
   return (
-      <Stack.Navigator initialRouteName="CriarFila">
-        <Stack.Screen name="CriarFila" component={CriarFila} options={{
-          title: 'CriarFila',
+      <Stack.Navigator initialRouteName="Deslogar">
+        <Stack.Screen name="Deslogar" component={Deslogar} options={{
+          title: 'Deslogando',
           headerStyle: {
             backgroundColor: '#3f48cc',
             height: 80,
@@ -34,4 +34,4 @@ const CriarFilaNavigation = () => {
   );
 }
 
-export default CriarFilaNavigation;
+export default DeslogarNavigation;

@@ -7,10 +7,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 // Screen Navigations
 import HomeNavigation from './HomeNavigation'
-import FilaAdminNavigation from './FilaAdminNavigation'
-import HistoricoNavigation from './HistoricoNavigation'
 import ConfigNavigation from './ConfigNavigation'
-import CriarFilaNavigation from './CriarFilaNavigation'
+import DeslogarNavigation from './DeslogarNavigation'
 
 // Drawer Stack
 const Drawer = createDrawerNavigator();
@@ -48,8 +46,8 @@ const DrawerNavigation = () => {
                 />
 
                 <Drawer.Screen
-                    name="CriarFila"
-                    component={CriarFilaNavigation}
+                    name="Deslogar"
+                    component={DeslogarNavigation}
                     options={{
                         title: 'Deslogar'
                         }}
