@@ -13,7 +13,8 @@ const Deslogar = ({ navigation }) => {
     return (
         <View style={TelaStyles.container}>
             <Text style={TelaStyles.textSombra}>Deslogou</Text>
-            <Button onPress={() => navigation.navigate('Home')} text='Voltar' />
+            
+            <Button onPress={() => navigation.goBack()} text='Voltar' />
         </View>
     )
 }

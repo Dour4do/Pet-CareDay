@@ -28,7 +28,7 @@ const HomeNavigation = () => {
           letterSpacing: 1,
           fontWeight: 'bold',
         },
-        headerLeft: () => <DrawerButton />
+
       }} />
       <Stack.Screen name="Principal" component={Principal} options={{
         title: 'Pet CareDay',
@@ -58,7 +58,6 @@ const HomeNavigation = () => {
           letterSpacing: 1,
           fontWeight: 'bold',
         },
-        headerLeft: () => <DrawerButton />
       }} />
 
       <Stack.Screen name="Hospedagem" component={Hospedagem} options={{

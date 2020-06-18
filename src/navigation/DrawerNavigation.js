@@ -6,9 +6,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 
 // Screen Navigations
+
 import HomeNavigation from './HomeNavigation'
-import ConfigNavigation from './ConfigNavigation'
-import DeslogarNavigation from './DeslogarNavigation'
+
 
 // Drawer Stack
 const Drawer = createDrawerNavigator();
@@ -30,7 +30,7 @@ const DrawerNavigation = () => {
                 overlayColor='transparent'
             >
                 <Drawer.Screen
-                    name="Home"
+                    name="Principal"
                     component={HomeNavigation}
                     options={{
                         title: 'Principal'
@@ -39,21 +39,21 @@ const DrawerNavigation = () => {
 
                 <Drawer.Screen
                     name="Config"
-                    component={ConfigNavigation}
+                    component={HomeNavigation}
                     options={{
                         title: 'Configuração'
-                        }}
+                    }}
                 />
 
                 <Drawer.Screen
                     name="Deslogar"
-                    component={DeslogarNavigation}
+                    component={HomeNavigation}
                     options={{
                         title: 'Deslogar'
-                        }}
+                    }}
                 />
             </Drawer.Navigator>
-            
+
         </NavigationContainer>
     )
 }
